@@ -1,0 +1,33 @@
+{
+  "name": "tetriswebpackts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack -p",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@types/jest": "^26.0.23",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "jest-webpack": "^0.5.1",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.2",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.11.2",
+    "write-file-webpack-plugin": "^4.5.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "jest": "^26.6.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
