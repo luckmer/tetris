@@ -3,68 +3,50 @@ import { piecesMap } from "./interfaces";
 export const WIDTH: number = 10;
 export const HEIGHT: number = 20;
 
-export const backgrounds = [
-  "REBECCAPURPLE",
-  "BLUEVIOLET",
-  "DARKVIOLET",
-  "DARKORCHID",
-  "DARKMAGENTA",
-  "PURPLE",
-  "INDIGO",
-  "SLATEBLUE",
-  "DARKSLATEBLUE",
-  "MEDIUMSLATEBLUE",
-];
-
 export const pieces: piecesMap = {
   t: {
     matrix: [
-      [0, 1, 0],
-      [1, 1, 1],
+      [1, 10, 10 + 1, 10 + 2],
+      [1, 10 + 1, 10 + 2, 10 * 2 + 1],
+      [10, 10 + 1, 10 + 2, 10 * 2 + 1],
+      [1, 10, 10 + 1, 10 * 2 + 1],
     ],
     color: "#7F63FF",
   },
   square: {
     matrix: [
-      [1, 1],
-      [1, 1],
+      [0, 1, 10, 10 + 1],
+      [0, 1, 10, 10 + 1],
+      [0, 1, 10, 10 + 1],
+      [0, 1, 10, 10 + 1],
     ],
     color: "#FFEBE3",
   },
-  lLeft: {
+  l: {
     matrix: [
-      [1, 0],
-      [1, 0],
-      [1, 1],
+      [1, 10 + 1, 10 * 2 + 1, 2],
+      [10, 10 + 1, 10 + 2, 10 * 2 + 2],
+      [1, 10 + 1, 10 * 2 + 1, 10 * 2],
+      [10, 10 * 2, 10 * 2 + 1, 10 * 2 + 2],
     ],
     color: "#5DBF95",
   },
-  lRight: {
+  crooked: {
     matrix: [
-      [0, 1],
-      [0, 1],
-      [1, 1],
-    ],
-    color: "#FFEDAA",
-  },
-  crookedLeft: {
-    matrix: [
-      [0, 1],
-      [1, 1],
-      [1, 0],
+      [0, 10, 10 + 1, 10 * 2 + 1],
+      [10 + 1, 10 + 2, 10 * 2, 10 * 2 + 1],
+      [0, 10, 10 + 1, 10 * 2 + 1],
+      [10 + 1, 10 + 2, 10 * 2, 10 * 2 + 1],
     ],
     color: "#FFFBED",
   },
-  crookedRight: {
-    matrix: [
-      [1, 0],
-      [1, 1],
-      [0, 1],
-    ],
-    color: "#92E3C0",
-  },
   straight: {
-    matrix: [[1], [1], [1], [1]],
+    matrix: [
+      [1, 10 + 1, 10 * 2 + 1, 10 * 3 + 1],
+      [10, 10 + 1, 10 + 2, 10 + 3],
+      [1, 10 + 1, 10 * 2 + 1, 10 * 3 + 1],
+      [10, 10 + 1, 10 + 2, 10 + 3],
+    ],
     color: "#C2B5FD",
   },
 };
