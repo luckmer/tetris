@@ -8,54 +8,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Tetris</title>
   </head>
   <body>
     <main class="main">
-      <section class="game">
-      
-          <div class="game_display" />
+      <div class="game">
+        <div class="game_spacer">
+          <div class="controllers">
+            <div class="buttons">
+              <div class="buttons_control">
+                <button class="btn" value="pause/resume"></button>
+                <button class="btn" value="reset"></button>
+              </div>
+              <div class="buttons_joystick">
+                <div class="buttons_drop">
+                  <button value="drop"></button>
+                </div>
+                <div>
+                  <button value="up">&uarr;</button>
+                  <button value="down">&darr;</button>
+                </div>
+                <div>
+                  <button value="left">&larr;</button>
+                  <button value="right">&rarr;</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="hold">
-          <div class="hold_display"></div>
+        <div class="game_spacer">
+          <div class="game_border">
+            <div class="stats">
+              <div>
+                <div class="stats_view">
+                  <span>score</span>
+                  <p class="score">0</p>
+                </div>
+                <div class="stats_view">
+                  <span>level</span>
+                  <p class="level">0</p>
+                </div>
+                <div class="stats_view">
+                  <span>lines</span>
+                  <p class="lines">0</p>
+                </div>
+              </div>
+              <div class="stats_over">
+                <h1>GAME OVER</h1>
+              </div>
+            </div>
+            <div class="game_display" />
+          </div>
         </div>
-      </section>
+      </div>
     </main>
     <script src="./bundle.js"></script>
   </body>
 </html>
-
-
-<!-- <div class="game_panel">
-  <div class="header">
-    <div class="header_panel">
-      <div class="header_description">
-        <p>SCORE</p>
-      </div>
-      <div class="header_description">
-        <p class="score">0</p>
-      </div>
-    </div>
-    <div class="header_panel">
-      <div class="header_description">
-        <p>LEVEL</p>
-      </div>
-      <div class="header_description">
-        <p class="level">0</p>
-      </div>
-    </div>
-    <div class="header_panel">
-      <div class="header_description">
-        <p>LINES</p>
-      </div>
-      <div class="header_description">
-        <p class="lines">0</p>
-      </div>
-    </div>
-    <div>
-      <button value="play">Play</button>
-    </div>
-  </div> -->
